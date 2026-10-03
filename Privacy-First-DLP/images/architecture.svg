@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+  <title id="title">Privacy-First DLP architecture</title>
+  <desc id="desc">A flow diagram from local text file upload through extraction and detection to masked findings and a suggested review decision.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#52708a"/></marker></defs>
+  <rect width="1100" height="390" rx="24" fill="#f4f8fb"/>
+  <text x="550" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17324d">Privacy-First DLP · first milestone</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g fill="#fff" stroke="#8ca9bf" stroke-width="2">
+      <rect x="35" y="130" width="180" height="112" rx="16"/><rect x="265" y="130" width="180" height="112" rx="16"/>
+      <rect x="495" y="130" width="180" height="112" rx="16"/><rect x="725" y="130" width="160" height="112" rx="16"/>
+      <rect x="925" y="130" width="145" height="112" rx="16"/>
+    </g>
+    <g fill="#17324d">
+      <text x="125" y="174" font-size="18" font-weight="700">Upload TXT</text><text x="125" y="204" font-size="14">Local file</text>
+      <text x="355" y="174" font-size="18" font-weight="700">Read text</text><text x="355" y="204" font-size="14">UTF-8 decode</text>
+      <text x="585" y="174" font-size="18" font-weight="700">Detect patterns</text><text x="585" y="204" font-size="14">Email · phone-like</text>
+      <text x="805" y="174" font-size="18" font-weight="700">Mask results</text><text x="805" y="204" font-size="14">Hide most digits</text>
+      <text x="997" y="174" font-size="18" font-weight="700">Review</text><text x="997" y="204" font-size="14">Mask / block cue</text>
+    </g>
+  </g>
+  <g stroke="#52708a" stroke-width="3" marker-end="url(#arrow)"><path d="M220 186h35"/><path d="M450 186h35"/><path d="M680 186h35"/><path d="M890 186h25"/></g>
+  <text x="550" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#486174">Educational prototype · pattern matches are approximate · no production security decisions</text>
+</svg>
