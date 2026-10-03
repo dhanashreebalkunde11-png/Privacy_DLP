@@ -6,10 +6,19 @@ A student project that scans documents for common sensitive information. The Str
 
 Upload a TXT, PDF, DOCX, or CSV file up to 10 MB, scan it for emails, phone-like numbers, labeled passwords, and labeled API keys, then review or download a redacted text preview. The API accepts up to 200,000 extracted characters per scan. Image-only PDFs are not supported because OCR is not included. This is a learning prototype, not a production security product.
 
+## Get the project
+
+To work with this project as a team, clone the repository and enter its project folder:
+
+```powershell
+git clone https://github.com/dhanashreebalkunde11-png/Privacy_DLP.git
+cd Privacy_DLP/Privacy-First-DLP
+```
+
 ## Run it
 
 1. Install Python 3.10 or newer.
-2. Open a terminal in this folder.
+2. Open a terminal in the `Privacy-First-DLP` project folder (after cloning, run `cd Privacy_DLP/Privacy-First-DLP`).
 3. (Recommended) Create and activate a virtual environment:
 
    ```powershell
@@ -26,7 +35,7 @@ Upload a TXT, PDF, DOCX, or CSV file up to 10 MB, scan it for emails, phone-like
 5. Start the API in the first terminal:
 
    ```powershell
-   uvicorn api.main:app --host 127.0.0.1 --port 8000
+   python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
    ```
 
 6. Open a second terminal in this folder and start the front end:
